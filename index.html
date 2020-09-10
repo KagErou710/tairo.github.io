@@ -1,212 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ 
+<script>
+    var x1 = Math.round(Math.random()*100)
+        
+    
+    var x2 = Math.round(Math.random()*100)
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    
+    function btn_click(){
+        
+        if (x1 + x2 == document.getElementById("txtanswer").value){
+            document.getElementById('newchan').innerText = "Good job!";
+            document.getElementById('newchan').setAttribute("style","color :green")
+        }
+
+        
+        else{
+            document.getElementById('newchan').innerText = "Try again !";
+            document.getElementById('newchan').setAttribute("style","color :red")
+        }
+}
+
+
+</script>   
 </head>
+
+
 <body>
+    <h1>Tairo Kageyama 62011257</h1>
+    <h1>Quiz</h1>
+    <div>What is the answer of <span id = "x1"></span> + <span id="x2"></span></div>
 
-<header style="background-color:white" >The KagEro campany</header>
-<div class="container-fluid">
-  <div class="row">
-   
-    <div class="col-sm" style="background-color:white;">
-        <a>
-            <img src = 'account.png' width="650" height= "650" >
-        </a>
-    </div>
+    <br>
+    <br>
+    <input type="text" id="txtanswer">
+    <br>
+    <button onclick="btn_click()">submit</button>
+    <p id="newchan"></p>
 
-    <div class="col-sm" style="background-color:white; border-color: white;">
-        <div class="row mb-3">
-   
-            <div class="input-group col-sm" style="background-color:white;">
-                <div class="input-group-prepend" >
-                    <div class="input-group-text" style="background-color: white;">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-diff" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                            <path fill-rule="evenodd" d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5zM8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                        </svg>
-                    </div>
-                </div>
-                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="First name">
-            </div>
-
-            <div class="col-sm input-group" style="background-color:white  border-color: white;">
-                <div class="input-group-prepend">
-                    <div class="input-group-text" style="background-color: white;">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-diff" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                            <path fill-rule="evenodd" d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5zM8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                        </svg>
-                    </div>
-                </div>
-            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Last name">
-            </div>
-            
-            <br>
-            
-        </div>
-
-        <div class="row2 mb-4">
-            <div class="col-sm input-group" style="background-color:white; border-color: white">
-                <div class="input-group-prepend">
-                    <div class="input-group-text" style="background-color:white;">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-diff" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                            <path fill-rule="evenodd" d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5zM8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                        </svg>
-                    </div>
-                </div>
-            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="E-mail address">
-            </div>
-        </div>
-
-        <div class="row3 mb-5 input-group"  style="background-color: white;">
-
-            <div class="input-group-prepend" style="background-color:white;">
-                <button type="button" class="btn btn-outline-secondary">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-diff" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                        <path fill-rule="evenodd" d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5zM8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                    </svg>+0
-                </button>
-                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-                </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">+1</a>
-                <a class="dropdown-item" href="#">+2</a>
-                <a class="dropdown-item" href="#">+3</a>
-                </div>
-            </div>
-            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" placeholder="phone number">
-
-        </div>
-
-        <div class="row4 input-group mb-3" style="background-color: white; border-color: white">
-            <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01" style="background-color: white;">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-diff" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                        <path fill-rule="evenodd" d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5zM8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                    </svg>
-                </label>
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose your job</option>
-              <option value="1">a</option>
-              <option value="2">b</option>
-              <option value="3">c</option>
-            </select>
-        </div>
+<script>
+ document.getElementById('x1').innerText=x1;
+document.getElementById('x2').innerText=x2;
     
-        <div class="row mb-3">
-   
-            <div class="input-group col-sm" style="background-color:white; border-color: white">
-                <div class="input-group-prepend" >
-                    <div class="input-group-text" style="background-color: white;">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-diff" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                            <path fill-rule="evenodd" d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5zM8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                        </svg>
-                    </div>
-                </div>
-                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="password">
-            </div>
-
-            <div class="col-sm input-group" style="background-color:white; border-color: white">
-                <div class="input-group-prepend">
-                    <div class="input-group-text" style="background-color: white;">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-diff" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                            <path fill-rule="evenodd" d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5zM8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                        </svg>
-                    </div>
-                </div>
-            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="confirm password">
-            </div>
-            
-            <br>
-            
-        </div>
-
-
-        <div class="row6 input-group mb-3">
-
-            <div class="col-md input-group-prepend" style="background-color: white; border-color: white">
-                <button type="button" class="btn btn-info btn-lg btn-block">create your account</button>
-            </div>
-
-        </div>
-
-        <div class="row7 input-group mb-3">
-            <div class="col-md6 input-group-text" style="border-color: white; background-color: white;">
-                <hr width="315px">
-            </div>
-        
-            <div class="col-md1 input-group-text" style="border-color: white; background-color: white;">
-                OR
-            </div>
-
-            <div class="col-md6 input-group-text" style="border-color: white; background-color: white;">
-                <hr width="315px">
-            </div>
-
-        </div>
-
-        <div class="row6 mb-3 input-group">
-            <div class="col-md input-group-prepend">
-                <button type="button" href="https://translate.google.com/?hl=ja" class="fa fa-facebook btn-block btn-lg" style="background-color: blue; color: white;" onclick="window.location.href='https://docs.google.com/presentation/d/1ks64xJ7b_nay33fnVYiN4SCg-3q6qiVqPQgYvYskAfY/edit#slide=id.g8cb5f5e0bb_0_1';">
-                    Sign in with Facebook
-                </a>
-            </div>
-        </div>
-
-        <div class="row7 mb-3">
-            <div class="col-md">
-                <button type="button" class="fa fa-twitter btn-block btn-lg" style="background-color: cornflowerblue; color: white;" onclick="window.location.href='https://translate.google.com/?hl=ja';">
-                    Sign in with Twitter
-                </a>
-                    
-            
-            </div>
-        </div>
-
-        
-        <div class="row8 input-group">
-            <div class="col-sm4 input-group-prepend">
-                &nbsp;
-            </div>
-            <div class="col-sm8 input-group-prepend">
-                <div class="sentence input-group-prepend">Already registered?</div>
-                <div class="link input-group-prepend">
-                    <a href="https://www.homeandlearn.co.uk/WD/wds5pA.html">
-                        Login
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm4 input-group-prepend">
-                &nbsp;
-            </div>
-            </div>
-        </div>
-
-    </div>
-
-    
-  </div>
-</div>
-
-    
+</script>
 </body>
+
 </html>
