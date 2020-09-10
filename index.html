@@ -1,210 +1,208 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    
-</head>
-<body>
-
-<header style="background-color:white" >The KagEro campany</header>
-<div class="container-fluid">
-  <div class="row">
-   
-    <div class="col-sm" style="background-color:white;">
-        <a>
-            <img src = 'account.png' width="650" height= "650" >
-        </a>
-    </div>
-
-    <div class="col-sm" style="background-color:white; border-color: white;">
-        <div class="row mb-3">
-   
-            <div class="input-group col-sm" style="background-color:white;">
-                <div class="input-group-prepend" >
-                    <div class="input-group-text" style="background-color: white;">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-diff" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                            <path fill-rule="evenodd" d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5zM8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                        </svg>
-                    </div>
-                </div>
-                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="First name">
-            </div>
-
-            <div class="col-sm input-group" style="background-color:white  border-color: white;">
-                <div class="input-group-prepend">
-                    <div class="input-group-text" style="background-color: white;">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-diff" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                            <path fill-rule="evenodd" d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5zM8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                        </svg>
-                    </div>
-                </div>
-            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Last name">
-            </div>
+<html>
+    <style>
+        body {
+        border-style: solid;
+        height: 842px;
+        width: 605px;
+        /* to centre page on screen*/
+        margin-left: auto;
+        margin-right: auto;
+         
+    }
+        div.name_birth {
+ 
+            color: white;
+            background-color:rgb(9, 0, 129);
+            text-align: right;
+            float:left;
             
-            <br>
+            padding-left: 245px;
+        }
+        div.name_birth p {
             
-        </div>
-
-        <div class="row2 mb-4">
-            <div class="col-sm input-group" style="background-color:white; border-color: white">
-                <div class="input-group-prepend">
-                    <div class="input-group-text" style="background-color:white;">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-diff" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                            <path fill-rule="evenodd" d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5zM8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                        </svg>
-                    </div>
-                </div>
-            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="E-mail address">
-            </div>
-        </div>
-
-        <div class="row3 mb-5 input-group"  style="background-color: white;">
-
-            <div class="input-group-prepend" style="background-color:white;">
-                <button type="button" class="btn btn-outline-secondary">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-diff" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                        <path fill-rule="evenodd" d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5zM8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                    </svg>+0
-                </button>
-                <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-                </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">+1</a>
-                <a class="dropdown-item" href="#">+2</a>
-                <a class="dropdown-item" href="#">+3</a>
-                </div>
-            </div>
-            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" placeholder="phone number">
-
-        </div>
-
-        <div class="row4 input-group mb-3" style="background-color: white; border-color: white">
-            <div class="input-group-prepend">
-                <label class="input-group-text" for="inputGroupSelect01" style="background-color: white;">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-diff" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                        <path fill-rule="evenodd" d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5zM8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                    </svg>
-                </label>
-            </div>
-            <select class="custom-select" id="inputGroupSelect01">
-              <option selected>Choose your job</option>
-              <option value="1">a</option>
-              <option value="2">b</option>
-              <option value="3">c</option>
-            </select>
-        </div>
-    
-        <div class="row mb-3">
-   
-            <div class="input-group col-sm" style="background-color:white; border-color: white">
-                <div class="input-group-prepend" >
-                    <div class="input-group-text" style="background-color: white;">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-diff" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                            <path fill-rule="evenodd" d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5zM8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                        </svg>
-                    </div>
-                </div>
-                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="password">
-            </div>
-
-            <div class="col-sm input-group" style="background-color:white; border-color: white">
-                <div class="input-group-prepend">
-                    <div class="input-group-text" style="background-color: white;">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-diff" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2zm0 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H4z"/>
-                            <path fill-rule="evenodd" d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5zM8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
-                        </svg>
-                    </div>
-                </div>
-            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="confirm password">
-            </div>
             
-            <br>
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+
+        div.detail_1 {
+            color:black;
+            background-color:rgb(173, 230, 235);
+            width: 5cm;
+            padding-left: 20px;
+            height: 700 px;
+            margin-top: 150px;
+            font-size: 15px;
+        }
+
+        div.detail_2 b {
+            font-family:fantasy;
+        }
+
+        div.detail_2 setu {
+            margin-left:125px;
+
+        }
+
+
+
+        div.detail_2{
+            margin-top:-750px;
+            margin-left: 200px;
+            margin-right: 400px;
+            padding: 40px;
+            width: 300px;
+            height: 490px;
+            font-size: 15px;
             
-        </div>
+        }
 
-
-        <div class="row6 input-group mb-3">
-
-            <div class="col-md input-group-prepend" style="background-color: white; border-color: white">
-                <button type="button" class="btn btn-info btn-lg btn-block">create your account</button>
-            </div>
-
-        </div>
-
-        <div class="row7 input-group mb-3">
-            <div class="col-md6 input-group-text" style="border-color: white; background-color: white;">
-                <hr width="315px">
-            </div>
+        div.detail_2 hr{display: inline-flex;}
         
-            <div class="col-md1 input-group-text" style="border-color: white; background-color: white;">
-                OR
-            </div>
+        div.detail_3{
+            display: inline-flex;
+            margin-left: 200px;
+            margin-right: 400px;
+            margin-top: -100;
+            padding: 40px;
+            width: 200;
+            height: 1px;
+        }
 
-            <div class="col-md6 input-group-text" style="border-color: white; background-color: white;">
-                <hr width="315px">
-            </div>
+        div.detail_3 h3{
+            width: 150px;
+        }
 
-        </div>
-
-        <div class="row6 mb-3 input-group">
-            <div class="col-md input-group-prepend">
-                <button type="button" href="https://translate.google.com/?hl=ja" class="fa fa-facebook btn-block btn-lg" style="background-color: blue; color: white;" onclick="window.location.href='https://docs.google.com/presentation/d/1ks64xJ7b_nay33fnVYiN4SCg-3q6qiVqPQgYvYskAfY/edit#slide=id.g8cb5f5e0bb_0_1';">
-                    Sign in with Facebook
-                </a>
-            </div>
-        </div>
-
-        <div class="row7 mb-3">
-            <div class="col-md">
-                <button type="button" class="fa fa-twitter btn-block btn-lg" style="background-color: cornflowerblue; color: white;" onclick="window.location.href='https://translate.google.com/?hl=ja';">
-                    Sign in with Twitter
-                </a>
-                    
+        div.detail_4{
+            margin-left: 230px;
+            margin-right: 130px;
             
-            </div>
-        </div>
+            margin-top: -100;
+            
+            line-height: 115%;
+        }
+
+
+        .slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 50%; /* Full-width */
+  height: 5px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 5px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: rgb(38, 0, 255); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+            
+
+
 
         
-        <div class="row8 input-group">
-            <div class="col-sm4 input-group-prepend">
-                &nbsp;
-            </div>
-            <div class="col-sm8 input-group-prepend">
-                <div class="sentence input-group-prepend">Already registered?</div>
-                <div class="link input-group-prepend">
-                    <a href="https://www.homeandlearn.co.uk/WD/wds5pA.html">
-                        Login
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm4 input-group-prepend">
-                &nbsp;
-            </div>
-            </div>
-        </div>
 
-    </div>  
-  </div>
-</div>
-
-    
-</body>
+    </style>
 </html>
+
+<body>
+    <div>    
+
+        <div class="name_birth">
+        <h1>Tairo&nbsp;Kageyama&nbsp;62011257</h1>
+        <p>10&nbsp;July&nbsp;2000,&nbsp;Bangkok&nbsp;(Thailand)</p>
+        </div>
+
+
+        </div>
+
+        <div class="detail_1">
+            <a><img src = 'S__34848770.jpg' width="145" height= "165" ></a>
+
+            <h4> CONTACT</h4>
+            <hr style="color: chartreuse;">
+            <city>&#127968 Bangkok</city><br>
+            <phone>&#x260f 555-555-5555</phone><br>
+            <mail>&#9993 45451919@gmail.com</mail><br>
+            
+            <h4>EDUCATION</h4>
+            <hr>
+ 
+                <a>2007-2015&nbsp;-&nbsp;Thai-Japanese Association School Bangkok</a>
+                <hr>                
+                <a>2016-2018&nbsp;-&nbsp;Josuikan Bangkok International School</a>
+                <hr>
+                <a>2018-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;King Monkut's Institute of Technology Ladkrabang</a>
+                <hr>
+
+            <h4>LANGUAGES</h4>
+            <hr>
+                <div class="slidecontainer">
+                <a>Thai&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><input type="range" min="1" max="100" value="20" class="slider" id="myRange"><br>
+                <a>Japanese</a><input type="range" min="1" max="100" value="90" class="slider" id="myRange"><br>
+                <a>English&nbsp;&nbsp;</a><input type="range" min="1" max="100" value="20" class="slider" id="myRange"><br>
+                <a>Chinese&nbsp;&nbsp;</a><input type="range" min="1" max="100" value="0" class="slider" id="myRange"><br>
+                </div>
+            
+
+
+        </div>
+
+        <div class="detail_2">
+            <h3>ABOUT ME</h3>
+            <hr width="300" style="border-color: rgba(0, 250, 21, 0.877);">
+            <ul>
+                
+                <a>A second year Thai engineering student in computer innovation engineering at KMITL. My objective is to join organization of company specialized at computer science over the sea. Therefore, now I am hard working at learning about programming in order to achieve the purpose.</a>
+
+
+            </ul>
+            <h3>EXPERIENCES</h3>
+            <hr width="300" style="border-color: rgba(0, 250, 21, 0.877);">
+
+            <ul>
+                <li>project of Line bot, remodeling gun.</li>
+                <ul>
+                    <li>In Line Bot project, I create a bot that send pictures, video, and alarm. </li>
+                    <li>In remodeling gun project, I remodel the gun more safety, and can send live video.</li>
+                </ul>                    
+            </ul>
+
+            <h3>SKILLS</h3>
+            <hr width="300" style="border-color: rgba(0, 250, 21, 0.877);">
+
+            <ul>
+                <li>computer language</li>
+                    <ul>
+                        <li>python</li>
+                        <li>C</li>
+                        <li>html</li>
+                    </ul>
+                
+                
+            </ul>
+
+            <h3>CHARACTERISTIC</h3>
+            <hr width="300" style="border-color: rgba(0, 250, 21, 0.877);">
+            <ul>
+                ・High concentration
+                ・Logical thinking
+                ・Earnest
+                ・lots of curiousity
+
+            </ul>
+
+            
+
+
+
+</body>
